@@ -1,0 +1,4 @@
+# ignore all the tmp files
+*~
+# ignore the dataset
+dataset/*.json

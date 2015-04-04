@@ -1,0 +1,45 @@
+This is a file containing all data up to date
+
+The data in this folder is shuffled and deduped using dedupe_and_shuffle.py in bin/
+total webpages todate: 5547
+
+It crawls data from the following urls
+start_urls = ['http://www.stanford.edu/',
+              # business school (personal website verified)
+              'http://www.gsb.stanford.edu/faculty-research/faculty',
+              # school of earth, engery, and environmental sciences (may not have personal website)
+              'https://earth.stanford.edu/people/all?field_ses_associate_type_tid_1=2160&field_secondary_affiliations_value=All',
+              # school of education (personal website verified)
+              'https://ed.stanford.edu/faculty-profiles', 
+              # engineering (have to scroll through A-Z, Look for 'LINKS' may not present)
+              'http://engineering.stanford.edu/research-faculty/profile-faculty',
+              # humanity (general)
+              'http://humsci.stanford.edu/faculty/directory',
+              # humanity (humanity)
+              'http://humsci.stanford.edu/faculty/directory/humanities_arts',
+              # humanity (natural science)
+              'http://humsci.stanford.edu/faculty/directory/sciences',
+              # humanity (social science)
+              'http://humsci.stanford.edu/faculty/directory/socialsciences',
+              # law
+              'http://www.law.stanford.edu/directory',
+              # medicine (need to verify the url below)
+              'https://med.stanford.edu/profiles/browse?affiliations=capFaculty&name=all',
+              # background groups
+              'https://www.yahoo.com/',
+              'http://www.cnn.com/',
+              # mit pages
+              'http://www.cnn.com/',
+	      'https://www.eecs.mit.edu/people/faculty-advisors',
+	      # UC-Berkeley:
+	      http://vcresearch.berkeley.edu/faculty-expertise?name=&expertise_area=&term_node_tid_depth=
+	      # UPenn
+	      https://www.sas.upenn.edu/frd/faculty/index
+              ]
+
+The data in final_dataset.json contains the following fields:
+rlabel: 1 for researcher website, 0 for non researcher website, -1 for unlabeled website
+plabel: 1 for personal website, 0 for non personal website, -1 for unlabeled website
+url: the url of the page
+head: the header of the html page
+body: the body of the html page

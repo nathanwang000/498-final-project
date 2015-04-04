@@ -1,0 +1,5 @@
+This folder contains all the self written programs used for this project todate
+
+annotate.py: convinient function for annotation in browser
+machine_learning_pipeline.py: machine learning pipeline for webpage classification
+dedupe_and_shuffle.py: apply deduplication and shuffle the dataset
