@@ -1,4 +1,4 @@
-__author__ = 'Yifei'
+__author__ = 'Jin Zhang'
 
 import json
 import sys
@@ -31,5 +31,3 @@ random.shuffle(data)
 
 with open(filein[:-5]+'_dedupe_and_shuffle.json','wb') as page2:
     json.dump(data,page2)
-data_file.close()
-page2.close()
